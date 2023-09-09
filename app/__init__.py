@@ -16,4 +16,8 @@ def index():
     return 'Welcome to Guess App'
 
 from app.admin.endpoints import admin
+from app.staff.endpoints import staff
+from app.visitor.endpoints import visitor
 app.register_blueprint(admin)
+app.register_blueprint(staff)
+app.register_blueprint(visitor)
